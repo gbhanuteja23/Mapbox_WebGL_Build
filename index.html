@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Mapbox WebGL Test | Unity WebGL Player</title>
+    <title>Unity WebGL Player | Task-MapBox</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -18,7 +18,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Task-MapBox</div>
       </div>
     </div>
     <script>
@@ -54,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Mapbox_WebGL_8-12-22.loader.js";
+      var loaderUrl = buildUrl + "/Mapbox_WebGL_9-12-22.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Mapbox_WebGL_8-12-22.data",
-        frameworkUrl: buildUrl + "/Mapbox_WebGL_8-12-22.framework.js",
-        codeUrl: buildUrl + "/Mapbox_WebGL_8-12-22.wasm",
+        dataUrl: buildUrl + "/Mapbox_WebGL_9-12-22.data",
+        frameworkUrl: buildUrl + "/Mapbox_WebGL_9-12-22.framework.js",
+        codeUrl: buildUrl + "/Mapbox_WebGL_9-12-22.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Task-MapBox",
@@ -80,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1400px";
+        canvas.style.height = "700px";
       }
       loadingBar.style.display = "block";
 
